@@ -1,0 +1,4 @@
+<h1> <%= @cocktail.name %></h1>
+
+<%= link_to 'add ingredients', new_cocktail_dose_path(@cocktail)  %>
+<%= link_to 'delete ingredients', dose_path(@cocktail)  %>

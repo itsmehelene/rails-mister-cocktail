@@ -1,0 +1,19 @@
+<h1> je suis aussi ici </h1>
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <% if @cocktail.errors.any? %>
+    <div class="errors-container">
+      <ul>
+        <% @cocktail.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- [...] all the fields -->
+    <div class="form-inputs">
+    <%= f.input :name %>
+    <button type="button" class="btn btn-light">Add cocktail</button>
+  </div>
+<% end %>
