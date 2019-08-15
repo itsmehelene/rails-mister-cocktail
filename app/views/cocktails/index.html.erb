@@ -2,9 +2,17 @@
 
 <h1> All the cocktails </h1>
 
-<div class="container">
+
+
  <% @cocktails.each do |cocktail| %>
-        <h2><%= cocktail.name %></h2>
-        <p><%= link_to "See details", cocktail_path(cocktail), class: "btn btn-light"%></p>
-    <% end %>
+ <div class="card-index" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcybe_U9cBCZK1UXbfiFNCcGX0Lip6mTZ1KZWCqIoorFWztFBaA" alt="Card image cap">
+  <div class="card-body">
+        <h5><%= cocktail.name %></h5>
+         <btn class="btn"><%= link_to "See details", cocktail_path(cocktail), class: "btn btn-light"%></btn>
+          </div>
 </div>
+    <% end %>
+
+
+

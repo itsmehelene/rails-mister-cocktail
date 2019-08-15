@@ -1,12 +1,11 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar-cocktail {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFziuuQnrAbMWKWilZcQterbwZRnIa6-ym1nNrutynHGScX8SC');
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}

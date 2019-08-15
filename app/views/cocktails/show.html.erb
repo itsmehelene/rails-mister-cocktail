@@ -1,4 +1,26 @@
 <h1> <%= @cocktail.name %></h1>
 
-<%= link_to 'add ingredients', new_cocktail_dose_path(@cocktail)  %>
-<%= link_to 'delete ingredients', dose_path(@cocktail)  %>
+
+<div class="cards row justify-content-center">
+
+
+<% @cocktail.doses.each do |dose| %>
+<div class="card-product">
+  <img src="http://www.natural-cure.org/wp-content/uploads/wonders-of-lemon.jpg" />
+  <div class="card-product-infos">
+<%= dose.description %>
+<%= dose.ingredient.name %>
+  <%= link_to 'delete ingredients', dose_path(dose), :method => :delete %>
+ </div>
+</div>
+<% end %>
+
+</div>
+
+
+<button type="button" class="btn btn-info"><%= link_to 'add ingredients', new_cocktail_dose_path(@cocktail) %></button>
+
+
+
+
+
