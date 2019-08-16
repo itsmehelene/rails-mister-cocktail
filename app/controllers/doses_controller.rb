@@ -6,7 +6,6 @@ class DosesController < ApplicationController
 
   def create
     @dose = Dose.new(d_params)
-
     if @dose.save
       redirect_to cocktail_path(@cocktail)
     else

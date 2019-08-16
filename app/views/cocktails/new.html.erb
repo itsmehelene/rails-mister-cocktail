@@ -1,4 +1,5 @@
-<h1> je suis aussi ici </h1>
+
+<div class="container">
 
 <%= simple_form_for(@cocktail) do |f| %>
   <% if @cocktail.errors.any? %>
@@ -14,6 +15,9 @@
   <!-- [...] all the fields -->
     <div class="form-inputs">
     <%= f.input :name %>
-    <button type="button" class="btn btn-light">Add cocktail</button>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
+    <%= f.button :submit %>
   </div>
 <% end %>
+</div>

@@ -1,2 +1,16 @@
 // Import page-specific CSS files here.
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: pink;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+}
+
 @import "home";
