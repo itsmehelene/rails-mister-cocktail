@@ -8,7 +8,7 @@ class DosesController < ApplicationController
     @dose = Dose.new(d_params)
 
     if @dose.save
-      redirect_to cocktail_path(@cocktail), notice: 'dose created.'
+      redirect_to cocktail_path(@cocktail)
     else
       render :new
     end
