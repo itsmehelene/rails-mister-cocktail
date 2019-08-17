@@ -1,0 +1,35 @@
+  .btn-rose {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: solid white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.5s;
+
+
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+      color: pink;
+      border: solid pink;
+    }
+  }
+
+.btn-add {
+  text-decoration: none;
+  background-color: transparent;
+  border: transparent;
+  color: #B7BABF;
+  font-size: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+
+
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+      color: pink;
+    }
+  }

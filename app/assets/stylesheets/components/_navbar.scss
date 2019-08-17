@@ -9,32 +9,5 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-
-  .btn-light {
-  border-radius: 5px;
-  background-color: transparent;
-  color: white;
-
-    &:hover {
-      background-color: transparent;
-      color: pink;
-      border: none;
-    }
-
-    &:focus {
-       background-color: transparent;
-      color: pink;
-      border: none;
-    }
-
-  }
-  .btn {
-    &:focus {
-       background-color: transparent;
-      color: pink;
-      border: none;
-    }
-  }
 }
-
 
